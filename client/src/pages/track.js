@@ -22,7 +22,7 @@ query GetTrack($trackId: ID!) {
       modules {
         id
         title
-        Length
+        length
       }
     }
   }
