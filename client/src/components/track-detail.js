@@ -30,6 +30,8 @@ const TrackDetail = ({ track }) => {
     numberOfViews,
   } = track;
 
+  console.log(modules)
+
   return (
     <ContentSection>
       <CoverImage src={thumbnail} alt="" />
@@ -78,7 +80,7 @@ const TrackDetail = ({ track }) => {
                 <li key={module.title}>
                   <div>{module.title}</div>
                   <ModuleLength>
-                    {humanReadableTimeFromSeconds(module.length)}
+                    {humanReadableTimeFromSeconds(module.length || 200)}
                   </ModuleLength>
                 </li>
               ))}
